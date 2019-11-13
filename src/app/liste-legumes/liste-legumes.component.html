@@ -1,0 +1,7 @@
+<h1>Légumes du 12/November/2019</h1>
+<ul>
+
+    <li  *ngFor="let t of tabLegumes i=index"> 
+        <app-legume [img]"t.image" [name]"t.image" [le prix]"t.prix" [t.frais]"le frais"></app-legume></li>
+</ul>
+<p>Donnez un prix minimum:<input type="number" [(ngModele)]="val"<br> Le nombre de légumes ayant un prix {{val}} DT est <span *ngIf="tabLegumes.prix=val ; i=ibdex">{{i}}</span></p>
